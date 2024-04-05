@@ -1,0 +1,17 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Width="500"
+        Height="500"
+        x:Class="Fibonacci.MainWindow"
+        Title="Fibonacci">
+        
+        <Grid RowDefinitions="Auto, Auto" VerticalAlignment="Center" HorizontalAlignment="Center">
+                <Grid Grid.Row="0" ColumnDefinitions="Auto,Auto" VerticalAlignment="Center" HorizontalAlignment="Center">
+                        <TextBox Grid.Column="0" x:Name="TextBox" Watermark="Inserte un valor"/>
+                        <Button Grid.Column="1" x:Name="Calcular" Click="Calcular_OnClick" Content="Calcular"/>
+                </Grid>
+                
+                <TextBox Grid.Row="1" x:Name="ResultTextBox"/>
+        </Grid>
+        
+</Window>
